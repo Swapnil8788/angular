@@ -1,0 +1,28 @@
+<h1 class="heading">Job Seekers Page</h1>
+
+<div class="card">
+    <p-table [value]="jobSeekerTable" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+            <tr>
+                <td>{{ product.courseId }}</td>
+                <td (click)="clickedJobSeeker(product.name)" class="clicked">
+                    <app-job-seeker-pop-up-window  [popUpComponentClick]="popUpComponentClick"></app-job-seeker-pop-up-window>
+                    {{ product.name }}
+                </td>
+                <td>{{ product.desingation }}</td>
+                <td>{{ product.city }}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+
+
+<p-button label="Go Back" styleClass="p-button-danger" (onClick)="goBackButton()"></p-button>

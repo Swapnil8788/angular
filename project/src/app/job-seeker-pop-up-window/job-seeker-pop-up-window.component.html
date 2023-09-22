@@ -1,0 +1,18 @@
+<div class="card flex justify-content-center" >
+   
+    <p-dialog header="Job Seeker Details" onclick="popUpTextFunction()"   [style]="{width: '50vw'}">
+        <p>
+            Job Seeker Name is {{ jobSeeker.name}}
+        </p>
+        <p>
+            Job Seeker Course is {{jobSeeker.courseId}}
+        </p>
+        <p>
+            Job Seeker designation is {{ jobSeeker.desingation}}
+        </p>
+        <p>
+            Job Seeker city is {{jobSeeker.city}}
+        </p>
+    </p-dialog>
+</div>
+<button (click)="popUpTextFunction()">Click</button>

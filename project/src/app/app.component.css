@@ -1,0 +1,12 @@
+.card-container{
+    padding-left: 132px;
+    padding-bottom: 33px;
+    padding-top: 47px;
+}
+.heading{
+    text-align: center;
+    font-size: 50px;
+}
+.logo:hover{
+    cursor: pointer;
+}
